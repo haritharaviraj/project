@@ -1,0 +1,119 @@
+
+<html>
+<head>
+<title>logout</title>
+<style>
+#topbar ul li
+{
+display:inline;
+margin-right:20px;
+padding:20px;
+}
+#topbar ul li a
+{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+</style>
+
+<script>
+function checkn()
+{
+if(f1.username.value.length==0)
+{
+alert("please enter the user name");
+return false;
+}
+}
+
+
+function check()
+{
+
+if(f1.gender.value.length==0)
+{
+alert("please fill the password");
+return false;
+}
+
+}
+function sub()
+{
+if(f1.username.value.length==0 || f1.password.value.length==0 )
+{
+alert("Please fill the empty field");
+return false;
+} 
+else
+{
+alert("thanks for entering  the details");
+return true;
+}
+}
+</script>
+</head>
+<body style="background-color:black";>
+<div id="topbar">
+<br>
+<br>
+<ul>
+<li><a href="hom.html">home</a></li>
+<li><a href="Aboutus.html">Aboutus</a></li>
+<li><a href="bcd.html">indoor</a></li>
+<li><a href="asdf.html">outdoor</a></li>
+<li><a href="signup.html">signup</a></li>
+</ul>
+<br>
+<br>
+<form name="f1" method="post">
+
+<pre>                                                name:<input type="text" name="username"  placeholder="username" required  onblur="return checkn()"></pre></br>
+
+<pre>                                            password:<input type="password" name="password"   placeholder="password" required onclick="return check()"></pre><br>
+<pre>                                                        <input type="submit" name="submit"  onclick="return sub()"></pre>
+<pre>	
+<?php
+{
+if(isset($_GET["submit"]))
+{
+	$s=$_GET["username"];
+	$f=$_GET["password"];
+	
+	$conn=mysqli_connect("localhost","root","","log");
+	$sql="insert into sam2 values('$s','$f')";
+	$res=mysqli_query($conn,$sql);
+	$r=mysqli_affected_rows($conn);
+<pre>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	if($r>0)
+	{ 
+		echo "record inserted";
+	}
+	</pre>
+}
+}
+?>													
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+#topbar
+{
+background-color:59c4f5;
+height:100%;
+width:100%;
+}
+#topbar h1
+{
+text-align:center;
+color:blue;
+font-size:60px;
+}
+
+#topbar ul li
+{
+display:inline;
+margin-right:20px;
+}
+#topbar ul li a
+{
+color:green;
+text-decoration:none;
+font-size:18px;
+}
+#banner1
+{
+width:50%;
+height:65%;
+float:left;
+}
+#banner1 h1 b
+{
+color:white;
+font-size:80px;
+}
+#banner1 p
+{
+color:red;
+font-size:50px;
+}
+#banner2
+{
+	
+	float:right;
+	padding:70px;
+	margin-bottom:50px;
+}

@@ -1,0 +1,35 @@
+#top
+{
+background-color:5f035a;
+width:100%;
+height:120%;
+margin:center;
+}
+#top h1
+{
+text-align:center;
+color:red;
+font-size:60px;
+}
+#top ul li
+{
+display:inline;
+margin-right:20px;
+}
+#top ul li a
+{
+color:green;
+text-decoration:none;
+font-size:18px;
+}
+#cor1
+{
+	padding:30px;
+	float:left;
+}
+#content1 h1 i
+{
+color:f30cd5;
+font-size:60px;
+padding:10px;
+}

@@ -1,0 +1,34 @@
+#box
+{
+background-color:0bb5f1;
+height:200%;
+width:100%;
+}
+#box h1
+{
+color:blue;
+font-size:40px;
+}
+#box ul li
+{
+display:inline;
+margin-right:20px;
+padding:20px;
+}
+#box ul li a
+{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+#box p
+{
+margin-left:5px;
+}
+#footer
+{
+	background-color:black;
+	width:100%;
+	height:30%;
+	font-color:white;
+}
